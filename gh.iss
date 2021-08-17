@@ -15,9 +15,9 @@ OutputBaseFilename=GitHub Cli Installer
 Name: modifypath; Description: &Add application directory to your environmental path; Flags: checkablealone
 
 [Files]
-; Uncommented for x64 build => Source: "gh-x64.exe"; DestDir: "{app}"; DestName: "gh.exe"; Check: InstallX64
-; Uncommented for ARM64 build => Source: "gh-ARM64.exe"; DestDir: "{app}"; DestName: "gh.exe"; Check: InstallARM64; Flags: solidbreak
-; Uncommented for 32 bit build => Source: "gh.exe"; DestDir: "{app}"; DestName: "gh.exe"; Check: InstallOtherArch; Flags: solidbreak
+; Uncomment for x64 build => Source: "gh-x64.exe"; DestDir: "{app}"; DestName: "gh.exe"; Check: InstallX64
+; Uncomment for ARM64 build => Source: "gh-ARM64.exe"; DestDir: "{app}"; DestName: "gh.exe"; Check: InstallARM64; Flags: solidbreak
+; Uncomment for 32 bit build => Source: "gh.exe"; DestDir: "{app}"; DestName: "gh.exe"; Check: InstallOtherArch; Flags: solidbreak
 
 ; Default for gh-installer demo (32bit)
 Source: "gh.exe"; DestDir: "{app}"; DestName: "gh.exe"; Flags: solidbreak
